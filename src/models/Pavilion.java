@@ -1,0 +1,23 @@
+package models;
+
+import brands.HP;
+import enums.HddEnum;
+import enums.RamEnum;
+import enums.SsdEnum;
+
+import java.math.BigInteger;
+
+public class Pavilion extends HP {
+
+    public Pavilion() {
+        this.ramMemory = RamEnum.EIGHT_GB.getSize();
+        this.hddStorage = HddEnum.FIVE_TWELVE_GB.getSize();
+        this.ssdStorage = SsdEnum.TWO_FIFTY_SIX_GB.getSize();
+    }
+
+
+    @Override
+    public BigInteger getCost() {
+        return new BigInteger("1400");
+    }
+}
