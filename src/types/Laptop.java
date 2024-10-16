@@ -5,9 +5,11 @@ import java.math.BigInteger;
 public abstract class Laptop {
     protected int ramMemory;
     protected int ssdStorage;
+    protected BigInteger cost;
 
-
-    public abstract BigInteger getCost();
+    public BigInteger getCost() {
+        return this.cost;
+    };
 
     public int getRAM() {
         return this.ramMemory;

@@ -12,11 +12,7 @@ public class MacbookProMax extends Apple {
     public MacbookProMax() {
         this.ramMemory = RamEnum.THIRTY_TWO_GB.getSize();
         this.ssdStorage = SsdEnum.ONE_TB.getSize();
+        this.cost = new BigInteger("1900");
     }
 
-
-    @Override
-    public BigInteger getCost() {
-        return new BigInteger("1700");
-    }
 }

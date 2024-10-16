@@ -13,10 +13,7 @@ public class ThinkPad extends Lenovo {
         this.ramMemory = RamEnum.SIXTEEN_GB.getSize();
         this.hddStorage = HddEnum.FIVE_TWELVE_GB.getSize();
         this.ssdStorage = SsdEnum.FIVE_TWELVE_GB.getSize();
+        this.cost = new BigInteger("1700");
     }
 
-    @Override
-    public BigInteger getCost() {
-        return new BigInteger("1700");
-    }
 }

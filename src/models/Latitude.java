@@ -13,11 +13,6 @@ public class Latitude extends Dell {
         this.ramMemory = RamEnum.EIGHT_GB.getSize();
         this.hddStorage = HddEnum.TWO_FIFTY_SIX_GB.getSize();
         this.ssdStorage = SsdEnum.TWO_FIFTY_SIX_GB.getSize();
-    }
-
-
-    @Override
-    public BigInteger getCost() {
-        return new BigInteger("1200");
+        this.cost = new BigInteger("1200");
     }
 }

@@ -11,11 +11,7 @@ public class MacbookPro extends Apple {
     public MacbookPro() {
         this.ramMemory = RamEnum.SIXTEEN_GB.getSize();
         this.ssdStorage = SsdEnum.FIVE_TWELVE_GB.getSize();
+        this.cost = new BigInteger("1600");
     }
 
-
-    @Override
-    public BigInteger getCost() {
-        return new BigInteger("1600");
-    }
 }

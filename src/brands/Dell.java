@@ -5,16 +5,17 @@ import types.Laptop;
 public abstract class Dell extends Laptop {
     protected int hddStorage;
 
-    public int getHddStorage() {
+    public int getHdd() {
         return this.hddStorage;
     }
 
     @Override
     public String toString() {
-        return "Brand: Lenovo\n" +
+        return "Brand: Dell\n" +
                 "Model: ThinkPad\n" +
-                "RAM: " + this.ramMemory + "\n" +
-                "SSD: " + this.ssdStorage + "\n" +
-                "HDD: " + this.hddStorage + "\n";
+                "RAM: " + this.ramMemory + "GB\n" +
+                "SSD: " + this.ssdStorage + "GB\n" +
+                "HDD: " + this.hddStorage + "GB\n" +
+                "Cost: $" + this.getCost();
     };
 }

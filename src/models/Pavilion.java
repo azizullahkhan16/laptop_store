@@ -13,11 +13,7 @@ public class Pavilion extends HP {
         this.ramMemory = RamEnum.EIGHT_GB.getSize();
         this.hddStorage = HddEnum.FIVE_TWELVE_GB.getSize();
         this.ssdStorage = SsdEnum.TWO_FIFTY_SIX_GB.getSize();
+        this.cost = new BigInteger("1400");
     }
 
-
-    @Override
-    public BigInteger getCost() {
-        return new BigInteger("1400");
-    }
 }
