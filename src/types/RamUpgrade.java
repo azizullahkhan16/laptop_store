@@ -3,13 +3,24 @@ package types;
 import enums.RamEnum;
 
 public abstract class RamUpgrade extends AddOnDecorator {
-    protected Laptop laptop;
-    protected int upgradedRam;
+    protected int upgradeRam;
+
+    public RamUpgrade(Laptop laptop) {
+        this.laptop = laptop;
+    }
+
+    @Override
+    public int getUpgrade() {
+        return this.upgradeRam;
+    }
 
     @Override
     public String toString() {
-        String info = super.toString();
-        return info + "\nUpgraded Ram: " + this.getUpgrade() + "GB" +
-                "\nFinal Cost: $" + this.getCost();
+        return this.laptop +
+                "============ RAM UPGRADE =============\n" +
+                "Requested Ram: " + this.getUpgrade() + "GB\n" +
+                "Upgraded Ram: " + this.getRAM() + "GB\n" +
+                "Final Cost: $" + this.getCost() +
+                "\n--------------------------------------\n";
     }
 }

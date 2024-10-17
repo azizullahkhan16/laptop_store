@@ -1,6 +1,10 @@
 
+import addOns.HddUpgrade256GB;
+import addOns.RamUpgrade16GB;
+import addOns.RamUpgrade32GB;
 import addOns.RamUpgrade8GB;
 import enums.RamEnum;
+import models.MacbookPro;
 import models.ThinkPad;
 import types.Laptop;
 
@@ -10,8 +14,8 @@ public class Main {
 
 //        System.out.println(laptop);
 
-        laptop = new RamUpgrade8GB(laptop);
-        laptop = new RamUpgrade8GB(laptop);
+        laptop = new HddUpgrade256GB(laptop);
+        laptop = new HddUpgrade256GB(laptop);
         System.out.println(laptop);
 
     }

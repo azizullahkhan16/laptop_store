@@ -5,19 +5,25 @@ import types.Laptop;
 import java.math.BigInteger;
 
 public abstract class Lenovo extends Laptop {
-    protected int hddStorage;
 
-    public int getHdd() {
+    public Lenovo() {
+        this.brand = "Lenovo";
+    }
+
+    @Override
+    public int getHDD() {
         return this.hddStorage;
     }
 
     @Override
     public String toString() {
-        return "Brand: Lenovo\n" +
-                "Model: ThinkPad\n" +
+        return "======= LAPTOP SPECIFICATIONS ========\n" +
+                "Brand: " + this.brand +"\n" +
+                "Model: " + this.model + "\n" +
                 "RAM: " + this.ramMemory + "GB\n" +
                 "SSD: " + this.ssdStorage + "GB\n" +
                 "HDD: " + this.hddStorage + "GB\n" +
-                "Cost: $" + this.getCost();
+                "Cost: $" + this.getCost() +
+                "\n--------------------------------------\n";
     };
 }

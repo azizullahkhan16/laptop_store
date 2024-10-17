@@ -10,6 +10,8 @@ import java.math.BigInteger;
 public class ThinkPad extends Lenovo {
 
     public ThinkPad() {
+        super();
+        this.model = "ThinkPad";
         this.ramMemory = RamEnum.SIXTEEN_GB.getSize();
         this.hddStorage = HddEnum.FIVE_TWELVE_GB.getSize();
         this.ssdStorage = SsdEnum.FIVE_TWELVE_GB.getSize();
