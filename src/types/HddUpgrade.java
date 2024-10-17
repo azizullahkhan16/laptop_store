@@ -1,6 +1,6 @@
 package types;
 
-public class HddUpgrade extends AddOnDecorator{
+public abstract class HddUpgrade extends AddOnDecorator{
     protected Laptop laptop;
     protected int upgradeHdd;
 
@@ -19,6 +19,7 @@ public class HddUpgrade extends AddOnDecorator{
         return this.laptop +
                 "============ HDD UPGRADE =============\n" +
                 "Requested Hdd: " + this.getUpgrade() + "GB\n" +
+                "Additional Cost: $" + this.getAdditionalCost() + "\n" +
                 "Upgraded Hdd: " + this.getHDD() + "GB\n" +
                 "Final Cost: $" + this.getCost() +
                 "\n--------------------------------------\n";

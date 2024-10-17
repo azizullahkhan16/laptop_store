@@ -11,11 +11,12 @@ public class RamUpgrade32GB extends RamUpgrade {
     public RamUpgrade32GB(Laptop laptop) {
         super(laptop);
         this.upgradeRam = 32;
+        this.additionalCost = new BigInteger("120");
         this.ramMemory = laptop.getRAM()+this.upgradeRam;
     }
 
     @Override
     public BigInteger getCost() {
-        return this.laptop.getCost().add(new BigInteger("120"));
+        return this.laptop.getCost().add(this.additionalCost);
     };
 }
