@@ -41,7 +41,7 @@ public abstract class AddOnDecorator extends Laptop{
 
     @Override
     public int getHDD() {
-        return this.hddStorage;
+        return this.laptop.getHDD();
     }
 
     public abstract int getUpgrade();

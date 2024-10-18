@@ -10,7 +10,6 @@ public class SsdUpgrade1TB extends SsdUpgrade {
         super(laptop);
         this.upgradeSsd = 1024;
         this.additionalCost = new BigInteger("140");
-        this.ssdStorage = laptop.getSSD()+this.upgradeSsd;
     }
 
     @Override

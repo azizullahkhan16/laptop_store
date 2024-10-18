@@ -11,7 +11,6 @@ public class RamUpgrade16GB extends RamUpgrade {
         super(laptop);
         this.upgradeRam = 16;
         this.additionalCost = new BigInteger("60");
-        this.ramMemory = laptop.getRAM()+this.upgradeRam;
     }
 
     @Override

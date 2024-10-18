@@ -11,7 +11,6 @@ public class HddUpgrade256GB extends HddUpgrade {
         super(laptop);
         this.upgradeHdd = 256;
         this.additionalCost = new BigInteger("20");
-        this.hddStorage = laptop.getHDD()+this.upgradeHdd;
     }
 
     @Override
