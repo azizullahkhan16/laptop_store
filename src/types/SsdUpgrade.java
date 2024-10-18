@@ -4,7 +4,12 @@ public abstract class SsdUpgrade extends AddOnDecorator{
     protected int upgradeSsd;
 
     public SsdUpgrade(Laptop laptop) {
-        this.laptop = laptop;
+        super(laptop);
+    }
+
+    @Override
+    public int getSSD() {
+        return this.laptop.getSSD() + this.upgradeSsd;
     }
 
     @Override

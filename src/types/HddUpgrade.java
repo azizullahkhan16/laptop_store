@@ -1,16 +1,20 @@
 package types;
 
 public abstract class HddUpgrade extends AddOnDecorator{
-    protected Laptop laptop;
     protected int upgradeHdd;
 
     public HddUpgrade(Laptop laptop) {
-        this.laptop = laptop;
+        super(laptop);
     }
 
     @Override
     public int getUpgrade() {
         return this.upgradeHdd;
+    }
+
+    @Override
+    public int getHDD() {
+        return this.laptop.getHDD() + this.upgradeHdd;
     }
 
 
